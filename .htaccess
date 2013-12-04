@@ -1,0 +1,6 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine on
+    RewriteBase /~ekt7be/db_project/
+    RewriteRule    ^$    app/webroot/    [L]
+    RewriteRule    (.*) app/webroot/$1    [L]
+</IfModule>
