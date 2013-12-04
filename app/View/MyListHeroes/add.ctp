@@ -27,7 +27,7 @@
 
 				<fieldset>
 					<div class="form-group">
-						<?php echo $this->Form->input('my_list_id', array('class' => 'form-control', 'conditions' => array('MyList.user_id' => $uid))); ?>
+						<?php echo $this->Form->input('my_list_id', array('class' => 'form-control')); ?>
 					</div><!-- .form-group -->
 					<div class="form-group">
 						<?php echo $this->Form->input('hero_id', array('class' => 'form-control')); ?>

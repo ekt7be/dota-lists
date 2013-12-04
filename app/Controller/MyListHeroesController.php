@@ -66,7 +66,7 @@ public function isAuthorized($user) {
 				$this->Session->setFlash(__('The my list hero could not be saved. Please, try again.'));
 			}
 		}
-		$myLists = $this->MyListHero->MyList->find('list');
+		$myLists = $this->MyListHero->MyList->find('list', array('conditions' => array('MyList.user_id =' => ''.$uid)));
 		$heroes = $this->MyListHero->Hero->find('list');
 		$this->set(compact('myLists', 'heroes'));
 	}
