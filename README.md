@@ -1,6 +1,6 @@
 Database Project 
 ================
-plato.cs.virginia.edu/~ekt7be/db_project/
+http://plato.cs.virginia.edu/~ekt7be/db_project/
 
 A database project that has Dota 2 related information. Purpose of the site is to allow users to organize lists of heroes and item builds for heroes. 
 
