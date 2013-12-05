@@ -3535,3 +3535,253 @@ Stack Trace:
 #10 /cslab/home/ekt7be/public_html/db_project/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(MyListHeroesController), Object(CakeRequest), Object(CakeResponse))
 #11 /cslab/home/ekt7be/public_html/db_project/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #12 {main}
+2013-12-04 17:56:50 Error: [MissingTableException] Table my_list_heroes_my_lists for model MyListHeroesMyList was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'my_list_heroes_my_lists',
+  'class' => 'MyListHeroesMyList',
+  'ds' => 'default',
+)
+Request URL: /~ekt7be/db_project/my_lists
+Stack Trace:
+#0 /cslab/home/ekt7be/public_html/db_project/lib/Cake/Model/Model.php(3493): Model->setSource('my_list_heroes_...')
+#1 /cslab/home/ekt7be/public_html/db_project/lib/Cake/Model/Model.php(1353): Model->getDataSource()
+#2 /cslab/home/ekt7be/public_html/db_project/lib/Cake/Model/Model.php(864): Model->schema()
+#3 /cslab/home/ekt7be/public_html/db_project/lib/Cake/Model/Model.php(892): Model->__isset('MyListHeroesMyL...')
+#4 /cslab/home/ekt7be/public_html/db_project/lib/Cake/Model/Model.php(3569): Model->__get('MyListHeroesMyL...')
+#5 /cslab/home/ekt7be/public_html/db_project/lib/Cake/Model/Datasource/DboSource.php(1591): Model->joinModel('MyListHeroesMyL...', Array)
+#6 /cslab/home/ekt7be/public_html/db_project/lib/Cake/Model/Datasource/DboSource.php(1067): DboSource->generateAssociationQuery(Object(MyList), Object(MyListHero), 'hasAndBelongsTo...', 'MyListHero', Array, Array, false, NULL)
+#7 /cslab/home/ekt7be/public_html/db_project/lib/Cake/Model/Model.php(2897): DboSource->read(Object(MyList), Array)
+#8 /cslab/home/ekt7be/public_html/db_project/lib/Cake/Model/Model.php(2869): Model->_readDataSource('all', Array)
+#9 /cslab/home/ekt7be/public_html/db_project/lib/Cake/Model/Datasource/DboSource.php(592): Model->find('all', Array)
+#10 /cslab/home/ekt7be/public_html/db_project/lib/Cake/Model/Model.php(800): DboSource->query('findAllByUserId', Array, Object(MyList))
+#11 /cslab/home/ekt7be/public_html/db_project/app/Controller/MyListsController.php(33): Model->__call('findAllByUserId', Array)
+#12 /cslab/home/ekt7be/public_html/db_project/app/Controller/MyListsController.php(33): MyList->findAllByUserId('10')
+#13 [internal function]: MyListsController->index()
+#14 /cslab/home/ekt7be/public_html/db_project/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(MyListsController), Array)
+#15 /cslab/home/ekt7be/public_html/db_project/lib/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#16 /cslab/home/ekt7be/public_html/db_project/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(MyListsController), Object(CakeRequest), Object(CakeResponse))
+#17 /cslab/home/ekt7be/public_html/db_project/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#18 {main}
+2013-12-04 17:57:05 Error: [MissingTableException] Table my_list_heroes_my_lists for model MyListHeroesMyList was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'my_list_heroes_my_lists',
+  'class' => 'MyListHeroesMyList',
+  'ds' => 'default',
+)
+Request URL: /~ekt7be/db_project/my_lists
+Stack Trace:
+#0 /cslab/home/ekt7be/public_html/db_project/lib/Cake/Model/Model.php(3493): Model->setSource('my_list_heroes_...')
+#1 /cslab/home/ekt7be/public_html/db_project/lib/Cake/Model/Model.php(1353): Model->getDataSource()
+#2 /cslab/home/ekt7be/public_html/db_project/lib/Cake/Model/Model.php(864): Model->schema()
+#3 /cslab/home/ekt7be/public_html/db_project/lib/Cake/Model/Model.php(892): Model->__isset('MyListHeroesMyL...')
+#4 /cslab/home/ekt7be/public_html/db_project/lib/Cake/Model/Model.php(3569): Model->__get('MyListHeroesMyL...')
+#5 /cslab/home/ekt7be/public_html/db_project/lib/Cake/Model/Datasource/DboSource.php(1591): Model->joinModel('MyListHeroesMyL...', Array)
+#6 /cslab/home/ekt7be/public_html/db_project/lib/Cake/Model/Datasource/DboSource.php(1067): DboSource->generateAssociationQuery(Object(MyList), Object(MyListHero), 'hasAndBelongsTo...', 'MyListHero', Array, Array, false, NULL)
+#7 /cslab/home/ekt7be/public_html/db_project/lib/Cake/Model/Model.php(2897): DboSource->read(Object(MyList), Array)
+#8 /cslab/home/ekt7be/public_html/db_project/lib/Cake/Model/Model.php(2869): Model->_readDataSource('all', Array)
+#9 /cslab/home/ekt7be/public_html/db_project/lib/Cake/Model/Datasource/DboSource.php(592): Model->find('all', Array)
+#10 /cslab/home/ekt7be/public_html/db_project/lib/Cake/Model/Model.php(800): DboSource->query('findAllByUserId', Array, Object(MyList))
+#11 /cslab/home/ekt7be/public_html/db_project/app/Controller/MyListsController.php(33): Model->__call('findAllByUserId', Array)
+#12 /cslab/home/ekt7be/public_html/db_project/app/Controller/MyListsController.php(33): MyList->findAllByUserId('10')
+#13 [internal function]: MyListsController->index()
+#14 /cslab/home/ekt7be/public_html/db_project/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(MyListsController), Array)
+#15 /cslab/home/ekt7be/public_html/db_project/lib/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#16 /cslab/home/ekt7be/public_html/db_project/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(MyListsController), Object(CakeRequest), Object(CakeResponse))
+#17 /cslab/home/ekt7be/public_html/db_project/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#18 {main}
+2013-12-04 17:58:54 Error: [MissingTableException] Table my_list_heroes_my_lists for model MyListHeroesMyList was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'my_list_heroes_my_lists',
+  'class' => 'MyListHeroesMyList',
+  'ds' => 'default',
+)
+Request URL: /~ekt7be/db_project/my_lists
+Stack Trace:
+#0 /cslab/home/ekt7be/public_html/db_project/lib/Cake/Model/Model.php(3493): Model->setSource('my_list_heroes_...')
+#1 /cslab/home/ekt7be/public_html/db_project/lib/Cake/Model/Model.php(1353): Model->getDataSource()
+#2 /cslab/home/ekt7be/public_html/db_project/lib/Cake/Model/Model.php(864): Model->schema()
+#3 /cslab/home/ekt7be/public_html/db_project/lib/Cake/Model/Model.php(892): Model->__isset('MyListHeroesMyL...')
+#4 /cslab/home/ekt7be/public_html/db_project/lib/Cake/Model/Model.php(3569): Model->__get('MyListHeroesMyL...')
+#5 /cslab/home/ekt7be/public_html/db_project/lib/Cake/Model/Datasource/DboSource.php(1591): Model->joinModel('MyListHeroesMyL...', Array)
+#6 /cslab/home/ekt7be/public_html/db_project/lib/Cake/Model/Datasource/DboSource.php(1067): DboSource->generateAssociationQuery(Object(MyList), Object(MyListHero), 'hasAndBelongsTo...', 'MyListHero', Array, Array, false, NULL)
+#7 /cslab/home/ekt7be/public_html/db_project/lib/Cake/Model/Model.php(2897): DboSource->read(Object(MyList), Array)
+#8 /cslab/home/ekt7be/public_html/db_project/lib/Cake/Model/Model.php(2869): Model->_readDataSource('all', Array)
+#9 /cslab/home/ekt7be/public_html/db_project/lib/Cake/Model/Datasource/DboSource.php(592): Model->find('all', Array)
+#10 /cslab/home/ekt7be/public_html/db_project/lib/Cake/Model/Model.php(800): DboSource->query('findAllByUserId', Array, Object(MyList))
+#11 /cslab/home/ekt7be/public_html/db_project/app/Controller/MyListsController.php(33): Model->__call('findAllByUserId', Array)
+#12 /cslab/home/ekt7be/public_html/db_project/app/Controller/MyListsController.php(33): MyList->findAllByUserId('12')
+#13 [internal function]: MyListsController->index()
+#14 /cslab/home/ekt7be/public_html/db_project/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(MyListsController), Array)
+#15 /cslab/home/ekt7be/public_html/db_project/lib/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#16 /cslab/home/ekt7be/public_html/db_project/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(MyListsController), Object(CakeRequest), Object(CakeResponse))
+#17 /cslab/home/ekt7be/public_html/db_project/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#18 {main}
+2013-12-04 17:59:18 Error: [MissingTableException] Table my_list_heroes_my_lists for model MyListHeroesMyList was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'my_list_heroes_my_lists',
+  'class' => 'MyListHeroesMyList',
+  'ds' => 'default',
+)
+Request URL: /~ekt7be/db_project/my_lists
+Stack Trace:
+#0 /cslab/home/ekt7be/public_html/db_project/lib/Cake/Model/Model.php(3493): Model->setSource('my_list_heroes_...')
+#1 /cslab/home/ekt7be/public_html/db_project/lib/Cake/Model/Model.php(1353): Model->getDataSource()
+#2 /cslab/home/ekt7be/public_html/db_project/lib/Cake/Model/Model.php(864): Model->schema()
+#3 /cslab/home/ekt7be/public_html/db_project/lib/Cake/Model/Model.php(892): Model->__isset('MyListHeroesMyL...')
+#4 /cslab/home/ekt7be/public_html/db_project/lib/Cake/Model/Model.php(3569): Model->__get('MyListHeroesMyL...')
+#5 /cslab/home/ekt7be/public_html/db_project/lib/Cake/Model/Datasource/DboSource.php(1591): Model->joinModel('MyListHeroesMyL...', Array)
+#6 /cslab/home/ekt7be/public_html/db_project/lib/Cake/Model/Datasource/DboSource.php(1067): DboSource->generateAssociationQuery(Object(MyList), Object(MyListHero), 'hasAndBelongsTo...', 'MyListHero', Array, Array, false, NULL)
+#7 /cslab/home/ekt7be/public_html/db_project/lib/Cake/Model/Model.php(2897): DboSource->read(Object(MyList), Array)
+#8 /cslab/home/ekt7be/public_html/db_project/lib/Cake/Model/Model.php(2869): Model->_readDataSource('all', Array)
+#9 /cslab/home/ekt7be/public_html/db_project/lib/Cake/Model/Datasource/DboSource.php(592): Model->find('all', Array)
+#10 /cslab/home/ekt7be/public_html/db_project/lib/Cake/Model/Model.php(800): DboSource->query('findAllByUserId', Array, Object(MyList))
+#11 /cslab/home/ekt7be/public_html/db_project/app/Controller/MyListsController.php(33): Model->__call('findAllByUserId', Array)
+#12 /cslab/home/ekt7be/public_html/db_project/app/Controller/MyListsController.php(33): MyList->findAllByUserId('12')
+#13 [internal function]: MyListsController->index()
+#14 /cslab/home/ekt7be/public_html/db_project/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(MyListsController), Array)
+#15 /cslab/home/ekt7be/public_html/db_project/lib/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#16 /cslab/home/ekt7be/public_html/db_project/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(MyListsController), Object(CakeRequest), Object(CakeResponse))
+#17 /cslab/home/ekt7be/public_html/db_project/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#18 {main}
+2013-12-04 17:59:42 Error: [MissingTableException] Table my_list_heroes_my_lists for model MyListHeroesMyList was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'my_list_heroes_my_lists',
+  'class' => 'MyListHeroesMyList',
+  'ds' => 'default',
+)
+Request URL: /~ekt7be/db_project/my_lists
+Stack Trace:
+#0 /cslab/home/ekt7be/public_html/db_project/lib/Cake/Model/Model.php(3493): Model->setSource('my_list_heroes_...')
+#1 /cslab/home/ekt7be/public_html/db_project/lib/Cake/Model/Model.php(1353): Model->getDataSource()
+#2 /cslab/home/ekt7be/public_html/db_project/lib/Cake/Model/Model.php(864): Model->schema()
+#3 /cslab/home/ekt7be/public_html/db_project/lib/Cake/Model/Model.php(892): Model->__isset('MyListHeroesMyL...')
+#4 /cslab/home/ekt7be/public_html/db_project/lib/Cake/Model/Model.php(3569): Model->__get('MyListHeroesMyL...')
+#5 /cslab/home/ekt7be/public_html/db_project/lib/Cake/Model/Datasource/DboSource.php(1591): Model->joinModel('MyListHeroesMyL...', Array)
+#6 /cslab/home/ekt7be/public_html/db_project/lib/Cake/Model/Datasource/DboSource.php(1067): DboSource->generateAssociationQuery(Object(MyList), Object(MyListHero), 'hasAndBelongsTo...', 'MyListHero', Array, Array, false, NULL)
+#7 /cslab/home/ekt7be/public_html/db_project/lib/Cake/Model/Model.php(2897): DboSource->read(Object(MyList), Array)
+#8 /cslab/home/ekt7be/public_html/db_project/lib/Cake/Model/Model.php(2869): Model->_readDataSource('all', Array)
+#9 /cslab/home/ekt7be/public_html/db_project/lib/Cake/Model/Datasource/DboSource.php(592): Model->find('all', Array)
+#10 /cslab/home/ekt7be/public_html/db_project/lib/Cake/Model/Model.php(800): DboSource->query('findAllByUserId', Array, Object(MyList))
+#11 /cslab/home/ekt7be/public_html/db_project/app/Controller/MyListsController.php(33): Model->__call('findAllByUserId', Array)
+#12 /cslab/home/ekt7be/public_html/db_project/app/Controller/MyListsController.php(33): MyList->findAllByUserId('12')
+#13 [internal function]: MyListsController->index()
+#14 /cslab/home/ekt7be/public_html/db_project/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(MyListsController), Array)
+#15 /cslab/home/ekt7be/public_html/db_project/lib/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#16 /cslab/home/ekt7be/public_html/db_project/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(MyListsController), Object(CakeRequest), Object(CakeResponse))
+#17 /cslab/home/ekt7be/public_html/db_project/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#18 {main}
+2013-12-04 18:27:30 Error: [MissingTableException] Table my_list_heroes_my_lists for model MyListHeroesMyList was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'my_list_heroes_my_lists',
+  'class' => 'MyListHeroesMyList',
+  'ds' => 'default',
+)
+Request URL: /~ekt7be/db_project/my_lists
+Stack Trace:
+#0 /cslab/home/ekt7be/public_html/db_project/lib/Cake/Model/Model.php(3493): Model->setSource('my_list_heroes_...')
+#1 /cslab/home/ekt7be/public_html/db_project/lib/Cake/Model/Model.php(1353): Model->getDataSource()
+#2 /cslab/home/ekt7be/public_html/db_project/lib/Cake/Model/Model.php(864): Model->schema()
+#3 /cslab/home/ekt7be/public_html/db_project/lib/Cake/Model/Model.php(892): Model->__isset('MyListHeroesMyL...')
+#4 /cslab/home/ekt7be/public_html/db_project/lib/Cake/Model/Model.php(3569): Model->__get('MyListHeroesMyL...')
+#5 /cslab/home/ekt7be/public_html/db_project/lib/Cake/Model/Datasource/DboSource.php(1591): Model->joinModel('MyListHeroesMyL...', Array)
+#6 /cslab/home/ekt7be/public_html/db_project/lib/Cake/Model/Datasource/DboSource.php(1067): DboSource->generateAssociationQuery(Object(MyList), Object(MyListHero), 'hasAndBelongsTo...', 'MyListHero', Array, Array, false, NULL)
+#7 /cslab/home/ekt7be/public_html/db_project/lib/Cake/Model/Model.php(2897): DboSource->read(Object(MyList), Array)
+#8 /cslab/home/ekt7be/public_html/db_project/lib/Cake/Model/Model.php(2869): Model->_readDataSource('all', Array)
+#9 /cslab/home/ekt7be/public_html/db_project/lib/Cake/Model/Datasource/DboSource.php(592): Model->find('all', Array)
+#10 /cslab/home/ekt7be/public_html/db_project/lib/Cake/Model/Model.php(800): DboSource->query('findAllByUserId', Array, Object(MyList))
+#11 /cslab/home/ekt7be/public_html/db_project/app/Controller/MyListsController.php(33): Model->__call('findAllByUserId', Array)
+#12 /cslab/home/ekt7be/public_html/db_project/app/Controller/MyListsController.php(33): MyList->findAllByUserId('12')
+#13 [internal function]: MyListsController->index()
+#14 /cslab/home/ekt7be/public_html/db_project/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(MyListsController), Array)
+#15 /cslab/home/ekt7be/public_html/db_project/lib/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#16 /cslab/home/ekt7be/public_html/db_project/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(MyListsController), Object(CakeRequest), Object(CakeResponse))
+#17 /cslab/home/ekt7be/public_html/db_project/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#18 {main}
+2013-12-04 19:08:43 Warning: Warning (2): Invalid argument supplied for foreach() in [/cslab/home/ekt7be/public_html/db_project/app/Controller/MyListsController.php, line 72]
+Trace:
+MyListsController::add() - APP/Controller/MyListsController.php, line 72
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 185
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 160
+[main] - APP/webroot/index.php, line 108
+
+2013-12-04 19:11:34 Warning: Warning (2): Invalid argument supplied for foreach() in [/cslab/home/ekt7be/public_html/db_project/app/Controller/MyListsController.php, line 72]
+Trace:
+MyListsController::add() - APP/Controller/MyListsController.php, line 72
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 185
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 160
+[main] - APP/webroot/index.php, line 108
+
+2013-12-04 19:16:43 Error: Fatal Error (1): Allowed memory size of 134217728 bytes exhausted (tried to allocate 14462830 bytes) in [/cslab/home/ekt7be/public_html/db_project/lib/Cake/Utility/Debugger.php, line 563]
+2013-12-04 19:16:43 Error: [FatalErrorException] Allowed memory size of 134217728 bytes exhausted (tried to allocate 14462830 bytes)
+Request URL: /~ekt7be/db_project/my_lists/add
+Stack Trace:
+#0 /cslab/home/ekt7be/public_html/db_project/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Allowed memory ...', '/cslab/home/ekt...', 563)
+#1 [internal function]: ErrorHandler::handleError(1, 'Allowed memory ...', '/cslab/home/ekt...', 563, Array)
+#2 /cslab/home/ekt7be/public_html/db_project/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Allowed memory ...', '/cslab/home/ekt...', 563, Array)
+#3 /cslab/home/ekt7be/public_html/db_project/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-12-04 19:24:57 Error: Fatal Error (1): Cannot use string offset as an array in [/cslab/home/ekt7be/public_html/db_project/app/Controller/MyListsController.php, line 78]
+2013-12-04 19:24:57 Error: [FatalErrorException] Cannot use string offset as an array
+Request URL: /~ekt7be/db_project/my_lists/add
+Stack Trace:
+#0 /cslab/home/ekt7be/public_html/db_project/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Cannot use stri...', '/cslab/home/ekt...', 78)
+#1 [internal function]: ErrorHandler::handleError(1, 'Cannot use stri...', '/cslab/home/ekt...', 78, Array)
+#2 /cslab/home/ekt7be/public_html/db_project/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Cannot use stri...', '/cslab/home/ekt...', 78, Array)
+#3 /cslab/home/ekt7be/public_html/db_project/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-12-04 19:37:59 Error: Fatal Error (1): Cannot use string offset as an array in [/cslab/home/ekt7be/public_html/db_project/app/Controller/MyListsController.php, line 78]
+2013-12-04 19:37:59 Error: [FatalErrorException] Cannot use string offset as an array
+Request URL: /~ekt7be/db_project/my_lists/add
+Stack Trace:
+#0 /cslab/home/ekt7be/public_html/db_project/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Cannot use stri...', '/cslab/home/ekt...', 78)
+#1 [internal function]: ErrorHandler::handleError(1, 'Cannot use stri...', '/cslab/home/ekt...', 78, Array)
+#2 /cslab/home/ekt7be/public_html/db_project/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Cannot use stri...', '/cslab/home/ekt...', 78, Array)
+#3 /cslab/home/ekt7be/public_html/db_project/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-12-04 19:40:38 Error: Fatal Error (1): Cannot use string offset as an array in [/cslab/home/ekt7be/public_html/db_project/app/Controller/MyListsController.php, line 78]
+2013-12-04 19:40:38 Error: [FatalErrorException] Cannot use string offset as an array
+Request URL: /~ekt7be/db_project/my_lists/add
+Stack Trace:
+#0 /cslab/home/ekt7be/public_html/db_project/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Cannot use stri...', '/cslab/home/ekt...', 78)
+#1 [internal function]: ErrorHandler::handleError(1, 'Cannot use stri...', '/cslab/home/ekt...', 78, Array)
+#2 /cslab/home/ekt7be/public_html/db_project/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Cannot use stri...', '/cslab/home/ekt...', 78, Array)
+#3 /cslab/home/ekt7be/public_html/db_project/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-12-04 19:41:34 Error: Fatal Error (1): Cannot use string offset as an array in [/cslab/home/ekt7be/public_html/db_project/app/Controller/MyListsController.php, line 78]
+2013-12-04 19:41:34 Error: [FatalErrorException] Cannot use string offset as an array
+Request URL: /~ekt7be/db_project/my_lists/add
+Stack Trace:
+#0 /cslab/home/ekt7be/public_html/db_project/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Cannot use stri...', '/cslab/home/ekt...', 78)
+#1 [internal function]: ErrorHandler::handleError(1, 'Cannot use stri...', '/cslab/home/ekt...', 78, Array)
+#2 /cslab/home/ekt7be/public_html/db_project/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Cannot use stri...', '/cslab/home/ekt...', 78, Array)
+#3 /cslab/home/ekt7be/public_html/db_project/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-12-04 19:42:25 Error: Fatal Error (1): Cannot use object of type MyList as array in [/cslab/home/ekt7be/public_html/db_project/app/Controller/MyListsController.php, line 77]
+2013-12-04 19:42:25 Error: [FatalErrorException] Cannot use object of type MyList as array
+Request URL: /~ekt7be/db_project/my_lists/add
+Stack Trace:
+#0 /cslab/home/ekt7be/public_html/db_project/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Cannot use obje...', '/cslab/home/ekt...', 77)
+#1 [internal function]: ErrorHandler::handleError(1, 'Cannot use obje...', '/cslab/home/ekt...', 77, Array)
+#2 /cslab/home/ekt7be/public_html/db_project/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Cannot use obje...', '/cslab/home/ekt...', 77, Array)
+#3 /cslab/home/ekt7be/public_html/db_project/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-12-04 19:42:50 Error: Fatal Error (1): Cannot use string offset as an array in [/cslab/home/ekt7be/public_html/db_project/app/Controller/MyListsController.php, line 78]
+2013-12-04 19:42:50 Error: [FatalErrorException] Cannot use string offset as an array
+Request URL: /~ekt7be/db_project/my_lists/add
+Stack Trace:
+#0 /cslab/home/ekt7be/public_html/db_project/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Cannot use stri...', '/cslab/home/ekt...', 78)
+#1 [internal function]: ErrorHandler::handleError(1, 'Cannot use stri...', '/cslab/home/ekt...', 78, Array)
+#2 /cslab/home/ekt7be/public_html/db_project/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Cannot use stri...', '/cslab/home/ekt...', 78, Array)
+#3 /cslab/home/ekt7be/public_html/db_project/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}

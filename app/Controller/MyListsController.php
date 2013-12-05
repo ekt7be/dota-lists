@@ -61,10 +61,7 @@ public function isAuthorized($user) {
  */
 	public function add() {
 		$uid = $this->Auth->User('id');
-/*
-		$arrayList = $this->MyList->find('list', array(
-        'conditions' => array('MyList.user_id' => $uid)));
-		$this->set('arrayList', $arrayList);*/	
+
 		$this->set('uid', $uid);
 		if ($this->request->is('post')) {
 			$this->MyList->create();
@@ -72,13 +69,25 @@ public function isAuthorized($user) {
 			$this->MyList->save();
 			if ($this->MyList->save($this->request->data)) {
 				$this->Session->setFlash(__('The list has been saved.'));
+				$this->Session->setFlash($this->request->data['MyList']['heroes']);
+				foreach($this->request->data['MyList']['heroes'] as $hero)
+				{
+					$this->MyList->MyListHero->create();
+					$this->MyList->MyListHero->set( array(
+					'my_list_id' => $this->MyList->id,
+					'hero_id' => $hero
+					));
+					$this->MyList->MyListHero->save();
+				}
+				
 				return $this->redirect(array('action' => 'index'));
 			} else {
 				$this->Session->setFlash(__('The list could not be saved. Please, try again.'));
 			}
 		}
 		$users = $this->MyList->User->find('list');
-		$this->set(compact('users'));
+		$heroes = $this->MyList->MyListHero->Hero->find('list');
+		$this->set(compact('users', 'heroes'));
 	}
 
 /**

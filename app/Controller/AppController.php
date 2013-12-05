@@ -38,7 +38,7 @@ public $components = array(
 	     'authorize' => array('Controller')
         )
     );
-public $theme = "Cakestrap";
+    public $theme = "Cakestrap";
     public function beforeFilter() {
         $this->Auth->allow('index', 'view');
     }
