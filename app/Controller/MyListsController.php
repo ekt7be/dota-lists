@@ -69,7 +69,7 @@ public function isAuthorized($user) {
 			$this->MyList->save();
 			if ($this->MyList->save($this->request->data)) {
 				$this->Session->setFlash(__('The list has been saved.'));
-				$this->Session->setFlash($this->request->data['MyList']['heroes']);
+				
 				foreach($this->request->data['MyList']['heroes'] as $hero)
 				{
 					$this->MyList->MyListHero->create();
