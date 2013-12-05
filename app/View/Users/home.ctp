@@ -17,8 +17,8 @@ A list of heroes lets you construct a list from a pool of all heroes and organiz
 	</ul>
 	<h3><?php echo __('View'); ?></h3>
 	<ul>
-		<li><?php echo $this->Html->link(__('My Lists'), array('controller' => 'my_lists', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('My Builds'), array('controller' => 'hero_builds', 'action' => 'index')); ?> </li>
+		<li><?php echo $this->Html->link(__('My Hero Lists'), array('controller' => 'my_lists', 'action' => 'index')); ?> </li>
+		<li><?php echo $this->Html->link(__('Hero Builds'), array('controller' => 'hero_builds', 'action' => 'index')); ?> </li>
 		<li><?php echo $this->Html->link(__('DOTA Heroes'), array('controller' => 'heroes', 'action' => 'index')); ?> </li>
 		<li><?php echo $this->Html->link(__('DOTA Items'), array('controller' => 'items', 'action' => 'index')); ?> </li>	
 	</ul>

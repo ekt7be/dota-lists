@@ -16,7 +16,7 @@
 			<li><?php echo $this->Html->link(__('Download Sqldump'), array('controller' => 'users', 'action' => 'download')); ?> </li>
 <?php } ?>			
 			<li><?php echo $this->Html->link(__('Your Hero Lists'), array('controller' => 'my_lists', 'action' => 'index')); ?> </li>
-			<li><?php echo $this->Html->link(__('Your Hero Builds'), array('controller' => 'hero_builds', 'action' => 'index')); ?> </li>
+			<li><?php echo $this->Html->link(__('Hero Builds'), array('controller' => 'hero_builds', 'action' => 'index')); ?> </li>
 			<li><?php echo $this->Html->link(__('View Heroes'), array('controller' => 'heroes', 'action' => 'index')); ?> </li>
 						<li><?php echo $this->Html->link(__('View Items'), array('controller' => 'items', 'action' => 'index')); ?> </li>
 						<li><?php echo $this->Html->link(__('View Recipes'), array('controller' => 'recipes', 'action' => 'index')); ?> </li>
