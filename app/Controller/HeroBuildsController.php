@@ -59,13 +59,25 @@ public function isAuthorized($user) {
 			$this->HeroBuild->create();
 			if ($this->HeroBuild->save($this->request->data)) {
 				$this->Session->setFlash(__('The hero build has been saved.'));
+				
+				foreach($this->request->data['HeroBuild']['items'] as $item)
+				{
+					$this->HeroBuild->HeroBuildItem->create();
+					$this->HeroBuild->HeroBuildItem->set( array(
+					'hero_build_id' => $this->HeroBuild->id,
+					'item_id' => $item
+					));
+					$this->HeroBuild->HeroBuildItem->save();
+				}
+				
 				return $this->redirect(array('action' => 'index'));
 			} else {
 				$this->Session->setFlash(__('The hero build could not be saved. Please, try again.'));
 			}
 		}
+		$items = $this->HeroBuild->HeroBuildItem->Item->find('list');
 		$heroes = $this->HeroBuild->Hero->find('list');
-		$this->set(compact('heroes'));
+		$this->set(compact('heroes', 'items'));
 	}
 
 /**

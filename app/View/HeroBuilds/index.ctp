@@ -44,10 +44,14 @@
 		<td><?php echo h($heroBuild['HeroBuild']['modified']); ?>&nbsp;</td>
 		<td class="actions">
 			<?php echo $this->Html->link(__('View'), array('action' => 'view', $heroBuild['HeroBuild']['id']), array('class' => 'btn btn-default btn-xs')); ?>
-			<?php echo $this->Html->link(__('Edit'), array('action' => 'edit', $heroBuild['HeroBuild']['id']), array('class' => 'btn btn-default btn-xs')); ?>
 			<?php 
-			if ($this->Session->read('Auth.User.role') == 'admin') 
-				echo $this->Form->postLink(__('Delete'), array('action' => 'delete', $heroBuild['HeroBuild']['id']), array('class' => 'btn btn-default btn-xs'), __('Are you sure you want to delete # %s?', $heroBuild['HeroBuild']['id'])); ?>
+				if ($this->Session->read('Auth.User.role') == 'admin') 
+					{
+						echo $this->Html->link(__('Edit'), array('action' => 'edit', $heroBuild['HeroBuild']['id']), array('class' => 'btn btn-default btn-xs')); ?>
+			<?php 
+						echo $this->Form->postLink(__('Delete'), array('action' => 'delete', $heroBuild['HeroBuild']['id']), array('class' => 'btn btn-default btn-xs'), __('Are you sure you want to delete # %s?', $heroBuild['HeroBuild']['id'])); 
+						}
+			?>
 		</td>
 	</tr>
 <?php endforeach; ?>
