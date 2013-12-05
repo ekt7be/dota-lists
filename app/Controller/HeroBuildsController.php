@@ -28,6 +28,7 @@ public function isAuthorized($user) {
  * @return void
  */
 	public function index() {
+	
 		$this->HeroBuild->recursive = 0;
 		$this->set('heroBuilds', $this->Paginator->paginate());
 	}

@@ -3785,3 +3785,33 @@ Stack Trace:
 #3 /cslab/home/ekt7be/public_html/db_project/lib/Cake/Core/App.php(902): App::_checkFatalError()
 #4 [internal function]: App::shutdown()
 #5 {main}
+2013-12-04 20:37:19 Error: Fatal Error (4): syntax error, unexpected T_IF in [/cslab/home/ekt7be/public_html/db_project/app/View/HeroBuilds/index.ctp, line 50]
+2013-12-04 20:37:19 Error: [InternalErrorException] Internal Server Error
+Request URL: /~ekt7be/db_project/hero_builds
+Stack Trace:
+#0 /cslab/home/ekt7be/public_html/db_project/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/cslab/home/ekt...', 50)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/cslab/home/ekt...', 50, Array)
+#2 /cslab/home/ekt7be/public_html/db_project/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/cslab/home/ekt...', 50, Array)
+#3 /cslab/home/ekt7be/public_html/db_project/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-12-04 20:37:28 Error: Fatal Error (4): syntax error, unexpected T_IF in [/cslab/home/ekt7be/public_html/db_project/app/View/HeroBuilds/index.ctp, line 50]
+2013-12-04 20:37:28 Error: [FatalErrorException] syntax error, unexpected T_IF
+Request URL: /~ekt7be/db_project/hero_builds
+Stack Trace:
+#0 /cslab/home/ekt7be/public_html/db_project/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/cslab/home/ekt...', 50)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/cslab/home/ekt...', 50, Array)
+#2 /cslab/home/ekt7be/public_html/db_project/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/cslab/home/ekt...', 50, Array)
+#3 /cslab/home/ekt7be/public_html/db_project/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-12-04 20:37:44 Error: Fatal Error (4): syntax error, unexpected T_IF in [/cslab/home/ekt7be/public_html/db_project/app/View/HeroBuilds/index.ctp, line 50]
+2013-12-04 20:37:44 Error: [FatalErrorException] syntax error, unexpected T_IF
+Request URL: /~ekt7be/db_project/hero_builds
+Stack Trace:
+#0 /cslab/home/ekt7be/public_html/db_project/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/cslab/home/ekt...', 50)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/cslab/home/ekt...', 50, Array)
+#2 /cslab/home/ekt7be/public_html/db_project/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/cslab/home/ekt...', 50, Array)
+#3 /cslab/home/ekt7be/public_html/db_project/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
