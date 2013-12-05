@@ -1,0 +1,41 @@
+Finish adding heroes to the database
+Add user_id to the hero_builds
+Images for everything
+More ajax like interations with form input
+Change role to binary value
+Search functionality in Items, Heroes, Builds
+
+Heros
+-Strenth,Agility, or Intelligence Class
+-Radiant or Dire
+-Role
+-Mana, Attack Speed
+-Attributes per level (Strength,Agility,Intelligence,HP,Mana,Amror,Attack Speed)
+-Damage Range
+
+Skill ability type needs more choices
+-Toggle
+-Summon
+-Passive
+-Debuff
+-Buff
+-Magical
+-Physical
+-Composite
+-Pure
+-Universal
+Damage can be non integer value
+Cooldown can be float
+Armor can be float
+Armor can be negative
+Range
+
+Items 
+Individual Stat Breakdown
+Consumables/Item types
+
+
+More CSS
+Better work flow
+Change delete messages
+
