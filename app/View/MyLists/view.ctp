@@ -69,11 +69,10 @@
 										foreach ($myList['MyListHero'] as $myListHero): 
 										$id = $myListHero['hero_id'];
 										$name = $heroes[$id];
-										
 										?>
 		<tr>
 	
-			<td><?php echo $name; ?></td>
+			<td><?php echo $this->Html->link($name, array('controller' => 'heroes', 'action' => 'view', $id));?></td>
 			<td class="actions">
 				<?php echo $this->Html->link(__('View'), array('controller' => 'my_list_heroes', 'action' => 'view', $myListHero['id']), array('class' => 'btn btn-default btn-xs')); ?>
 				<?php echo $this->Html->link(__('Edit'), array('controller' => 'my_list_heroes', 'action' => 'edit', $myListHero['id']), array('class' => 'btn btn-default btn-xs')); ?>

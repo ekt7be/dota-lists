@@ -70,11 +70,12 @@
 									<?php
 										$i = 0;
 										foreach ($heroBuild['HeroBuildItem'] as $heroBuildItem): 
-											$name = $items[$heroBuildItem['item_id']];
+											$id = $heroBuildItem['item_id'];
+											$name = $items[$id];
 										?>
 		<tr>
 		
-			<td><?php echo $name; ?></td>
+			<td><?php echo $this->Html->link($name, array('controller' => 'items', 'action' => 'view', $id));?></td>
 			<td class="actions">
 				<?php echo $this->Html->link(__('View'), array('controller' => 'hero_build_items', 'action' => 'view', $heroBuildItem['id']), array('class' => 'btn btn-default btn-xs')); ?>
 				<?php echo $this->Html->link(__('Edit'), array('controller' => 'hero_build_items', 'action' => 'edit', $heroBuildItem['id']), array('class' => 'btn btn-default btn-xs')); ?>
